@@ -17,7 +17,7 @@
   /* Create two columns/boxes that floats next to each other */
   nav {
     float: left;
-    width: 16%;
+    width: 150px;
     height: 1200px; /* only for demonstration, should be removed */
     background: #ccc;
     padding: 20px;
@@ -32,7 +32,7 @@
   article {
     float: left;
     padding: 20px;
-    width: 84%;
+    width:75%;
     background-color: #f1f1f1;
     height: 1200px; /* only for demonstration, should be removed */
   }
