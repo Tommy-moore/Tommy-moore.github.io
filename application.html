@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  .dropbtn {
+    background-color: rgba(114, 57, 3, 0.849);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: static;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: rgba(88, 44, 2, 0.87);}
+  h1 {
+  font-size: 20px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+img {
+height: 40px;}
+  </style>
+<link rel="stylesheet" href="CSS.css">
+</head>
+<body>
+<header>
+    <img src="bean logo.png" alt="Logo" style =" width:150px;height:150px;float:left;padding: 12px">   
+  <h2>Hot Beans Web</h2>
+  
+   
+   <h4>Application</h4>
+</header>
+
+<section>
+  <nav>
+    <div class="dropdown">
+      <button class="dropbtn">Navigation</button>
+      <div class="dropdown-content">
+        <a href="main.html">Home page</a>
+        <a href="development courses.html">Online development courses</a>
+        <a href="Employees.html">Our Employees</a>
+        <a href="profile page.html">Profile page</a>
+      </div>
+    </div>
+      </div>
+
+  </nav>
+  
+  <article>
+    <html>
+      <body>
+        <h2>Employment Application</h2>
+        <script type="text/javascript">
+        function ValidateForm(frm) {
+          //searches the form to check if the fields are empty and displays a message saying field required if it is blank.
+        if (frm.First_Name.value == "") {alert('First name is required.');frm.First_Name.focus();return false;}
+        if (frm.Last_Name.value == "") {alert('Last name is required.');frm.Last_Name.focus();return false;}
+        if (frm.Email_Address.value == "") {alert('Email address is required.');frm.Email_Address.focus();return false;}
+        if (frm.Email_Address.value.indexOf("@") < 1 || frm.Email_Address.value.indexOf(".") < 1) {alert('Please enter a valid email address.');frm.Email_Address.focus();return false;}
+        if (frm.Phone.value == "") {alert('Phone is required.');frm.Phone.focus();return false;}
+        if (frm.skip_CaptchaCode.value == "") {alert('Enter security code.');frm.skip_CaptchaCode.focus();return false;}
+        return true; }
+        function ReloadCaptchaImage(captchaImageId) {
+        var obj = document.getElementById(captchaImageId);
+        var src = '' + obj.src;
+        obj.src = '';
+        var date = new Date();
+        var pos = src.indexOf('&rad=');
+        if (pos >= 0) { src = src.substr(0, pos); }
+        obj.src = src + '&rad=' + date.getTime();
+        return false; }
+        </script>
+        <hr />
+        <form action="https://www.SnapHost.com/captcha/send.aspx" id="ContactUsCaptchaWebForm" method="post" onsubmit="return ValidateForm(this);" target="_top">
+        <input id="skip_WhereToSend" name="skip_WhereToSend" type="hidden" value="your@email.com" />
+        <input id="skip_SnapHostID" name="skip_SnapHostID" type="hidden" value="G3UK3MBGAFAB" />
+        <input id="skip_WhereToReturn" name="skip_WhereToReturn" type="hidden" value="https://www.youtube.com/watch?v=dQw4w9WgXcQ" />
+        <input id="skip_Subject" name="skip_Subject" type="hidden" value="Employment Application" />
+        <input id="skip_ShowUsersIp" name="skip_ShowUsersIp" type="hidden" value="1" />
+        <input id="skip_SendCopyToUser" name="skip_SendCopyToUser" type="hidden" value="1" />
+        <table border="0" cellpadding="5" cellspacing="0">
+        <tr>
+        <td style="width:100%">
+        <b>First name *</b><br />
+        <input name="First_Name" type="text" maxlength="50" style="width:535px" alignment="center" />
+        </td>
+        </tr>
+        <tr>
+        <td style="width:100%">
+        <b>Last name *</b><br />
+        <input name="Last_Name" type="text" maxlength="50" style="width:100%" />
+        </td>
+        </tr>
+        <tr>
+        <td colspan="2">
+        <b>Email *</b><br />
+        <input name="Email_Address" type="text" maxlength="100" style="width:535px" />
+        </td>
+        </tr>  
+        <tr>
+        <td style="width:100%">
+        <b>When can you start?</b><br />
+        <input name="StartDate" type="text" maxlength="50" style="width:535px" />
+        </td>
+        </tr>
+        <tr>
+        <td style="width:100%">
+        <b>Phone *</b><br />
+        <input name="Phone" type="text" maxlength="50" style="width:535px" />
+        </td>
+        </tr>
+        <tr>
+        <td style="width:100%">
+        <b>Home Phone</b><br />
+        <input name="Fax" type="text" maxlength="50" style="width:535px" />
+        </td>
+        </tr>
+        <tr>
+        <td colspan="2">
+        <b>Do you have eny expirience with HTML, CSS or Javascript? </b><br />
+        <input name="Relocate" type="radio" value="Yes" checked="checked" /> Yes &nbsp; &nbsp; &nbsp;
+        <input name="Relocate" type="radio" value="No" /> No &nbsp; &nbsp; &nbsp;
+        <input name="Relocate" type="radio" value="NotSure" /> Not sure
+        </td>
+        </tr>
+        </table>
+        <br />
+        <div style="text-align:center;">
+        <table border="0" cellpadding="0" cellspacing="0" style="text-align:center; width:300px; margin:auto;">
+        <tr><td colspan="2" style="padding-bottom:18px;">
+        <a href="http://www.snaphost.com/captcha/ProCaptchaOverview.aspx" alt="online request form" title="online request form">
+        online request form</a></td></tr>
+        <tr>
+        <td><i>Enter security code</i></td>
+        <td>SECURITY CODE</td>
+        </tr>
+        <tr>
+        <td>
+        <input name="skip_CaptchaCode" type="text" maxlength="6"
+        style="width:130px; height:28px; font-size:24px; text-align:center;" />
+        </td>
+        <td>
+        <a href="https://www.snaphost.com/captcha/ReadyForms/EmploymentApplicationForm.aspx"><img id="CaptchaImage" alt="Employment Application form" title="HTML code for Employment Application web form"
+        style="margin-left:20px; border:1px solid #999999;"
+        src="https://www.SnapHost.com/captcha/CaptchaImage.aspx?id=G3UK3MBGAFAB&ImgType=2" /></a>
+        <br /><a href="#" onclick="return ReloadCaptchaImage('CaptchaImage');"><span style="font-size:12px;">reload image</span></a>
+        </td>
+        </tr>
+        </table>
+        <br /><br />
+        <input name="skip_Submit" type="submit" value="Send Application" />
+        </div>
+        </form>
+        </body>
+      
+      </html>
+  </article>
+</section>
+
+<footer>
+  © Hot Beans Web 2021
+</footer>
+
+</body>
+</html>
